@@ -1,0 +1,43 @@
+.flex-container {
+  display: flex;
+  justify-content: center;
+  background-color: #3498db;
+}
+.flex-container > div {
+  background-color: #ffffff;
+  margin: 35px;
+  padding: 10px; /* box*/
+  font-size: 35px;
+}
+
+.transition{
+	  margin: 40px 300px 300px 400px;
+	  width: 400px;
+    height: 400px;
+    background: black;
+    transition: width 2s;
+}
+
+img:hover {
+    width: 700px;
+}
+
+.animation{
+	width: 200px; 
+	height: 200px;
+    background: red;
+    position: relative;
+    -webkit-animation: mymove infinite; 
+    -webkit-animation-duration: 3s; 
+    animation: mymove infinite;
+    animation-duration: 3s;
+}
+@-webkit-keyframes mymove {
+    from {top: 0px;}
+    to {top: 200px;}
+}
+
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 200px;}
+}
